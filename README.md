@@ -1,177 +1,47 @@
-## Exp 8: Reproducing an Image Using Prompts for Image Generation
-
-# Date : 
-# Reg. No: 212222220016
-
-## AIM:
-
-To explore how various prompting techniques can be used to generate and manipulate audio content (e.g., music, sound effects, voice narration) using AI models.
-
-## AI Tools for Audio Generation:
-
-## 1. OpenAI's Jukebox:
-
-   * A neural network capable of producing full-length songs in a variety of styles, complete with lyrics and vocalizations.
-   * Responds to inputs like genre tags, lyrics snippets, and references to artists.
-
-## 2. Google's AudioLM:
-
-   * Designed for context-aware generation of audio including speech and music.
-   * Accepts both acoustic and text-based inputs and excels in smooth continuation.
-
-## 3. Meta's MusicGen:
-
-   * A text-to-music model that produces high-quality music clips based on descriptive prompts.
-   * Can specify instruments, mood, tempo, and genre.
-
-
-## Prompting Techniques:
-
-## 1. Textual Descriptions:
-
-   * Type: Simple prompts that describe the desired output.
-   * Examples:
-
-     * Music: "A dreamy ambient track with echoing synths."
-     * Sound Effect: "Crackling fire with distant forest ambiance."
-     * Voice: "A calm female narrator reading a bedtime story."
-   * Tool Fit:
-
-     * Jukebox: Ideal for genre-artist alignment.
-     * AudioLM: Effective for descriptive speech prompts.
-     * MusicGen: Works best with richly detailed text.
-
-## 2. Conditional Prompts
-
-   * Type: Prompts that extend or modify a given audio sample.
-   * Example: "Extend this flute solo with percussion and harmonies."
-   * Tool Fit:
-
-     * AudioLM: Strong in audio extension.
-     * Jukebox: Useful for maintaining stylistic continuity.
-
-## 3. Structured Prompts
-
-   * Type: JSON-style prompts with attributes.
-   * Example:
-
-     ```
-     {
-       "genre": "Electronic",
-       "tempo": "Moderate",
-       "instrument": "Synthesizer"
-     }
-     ```
-   * Tool Fit:
-
-     * MusicGen: Parses structured data effectively.
-     * AudioLM: Responds to abstract structured input.
-
-## 4. Stylistic Prompts
-
-   * Type: Focused on style, era, or tone.
-   * Example:
-
-     * "A vintage 80s pop beat with analog synth sounds."
-     * "Monologue in the voice of a Shakespearean villain."
-   * Tool Fit:
-
-     * Jukebox: Excellent for music style reproduction.
-     * AudioLM: Can generate nuanced speech tones.
-
-## 5. Iterative Prompt Refinement
-
-   * Type: Modify prompt based on initial result.
-   * Example:
-
-     * Start: "Generate relaxing music."
-     * Refined: "Include harp and ocean waves for a spa ambiance."
-   * Tool Fit:
-
-     * Universally effective across Jukebox, AudioLM, and MusicGen.
-
-## Optimization Strategies:
-
-## 1. Be Specific:
-
-   * Include genre, instruments, mood, and sound profile.
-   * Better: "Upbeat Latin rhythm with acoustic guitar and bongos."
-
-## 3. Tool Selection:
-   * Jukebox: Best for vocal music in known styles.
-   * AudioLM: Best for extending and morphing speech/music.
-   * MusicGen: Best for detailed instrumental generation.
-
-## 4. Prompt Length Variation:
-
-   * Test both concise and detailed prompts to determine impact.
-
-## 5. Iterative Tuning:
-
-   * Start broad and refine iteratively for precision.
-
-## 6. Hybrid Input:
-
-   * Combine audio snippets and text to guide AI.
-
-
-## Expected Output:
-
-**1. Deliverables**
-
-A. **Set of Prompts**
-
-* *Basic:* "Create upbeat electronic music."
-* *Intermediate:* "Generate a 90-second funk track with bass guitar and claps."
-* *Advanced:* "Compose a 3-minute orchestral soundtrack that starts solemnly and crescendos into an epic climax with full brass and choir."
-
-B. **Generated Outputs**
-
-* Audio files stored and labeled by prompt tier.
-
-C. **Observations & Insights**
-
-* Short prompts yield generic responses.
-* Precision in descriptors like mood and instrument improves output relevance.
-* Impactful keywords: tempo, instrumentation, emotional tone.
-
-D. **Optimization Report**
-
-* *Best Practices:*
-
-  * Be descriptive: Use genre, tempo, and instruments.
-  * Include constraints (e.g., "120 BPM", "female voice").
-  * Use multimodal input if supported.
-
-**2. Advanced Techniques**
-
-A. **Iterative Prompting**
-
-* Initial: "Make a lo-fi beat."
-* Refined: "Add vinyl crackle and a jazzy piano loop."
-
-B. **Parameter Tweaking**
-
-* Volume: "Make it soft background music."
-* Tempo: "Set rhythm to 100 BPM."
-
-C. **Layered Prompts**
-
-* Step 1: "Create a melody with bells."
-* Step 2: "Overlay mellow bass and hi-hats."
-
-D. **Accent and Language Variation**
-
-* "Narrate this poem in a soft Irish accent."
-
-
-
-## Result:
-
-The experiment successfully explored how structured, conditional, and creative prompting affects the quality of AI-generated audio. Rich, specific prompts and thoughtful refinement enhanced control over the output. By leveraging the strengths of tools like Jukebox, AudioLM, and MusicGen, users can generate high-quality audio for music, speech, and soundscapes tailored to a wide range of applications.
-
-## Sample Audio URLs (Generated):
-
-1. Basic Prompt Audio: [https://sample-audio-output.com/basic\_track](https://sample-audio-output.com/basic_track)
-2. Intermediate Prompt Audio: [https://sample-audio-output.com/intermediate\_track](https://sample-audio-output.com/intermediate_track)
-3. Advanced Prompt Audio: [https://sample-audio-output.com/advanced\_track](https://sample-audio-output.com/advanced_track)
+## Aim 
+To explore and understand how different prompting techniques 
+influence AI models in generating and manipulating audio content. 
+This experiment aims to develop skills in crafting effective 
+audiospecific prompts, evaluate the quality and relevance of 
+AIgenerated audio outputs, and critically analyze model behaviors 
+across various audio generation tasks. Ultimately, it fosters 
+practical knowledge for creative and ethical use of AI-driven audio 
+technologies
+## Song title:O Surya
+## Text:
+Rising high in crimson fire,
+Breaker of the darkest hour,
+Golden chariot in the sky,
+Eyes of truth that never lie.
+Chorus
+O Surya, flame of might,
+Shine your blaze on day and night,
+Guide our hearts, and clear our sight,
+With your rays of fearless light.
+Verse 2
+Through the storms and through the haze,
+You burn steady, never sways.
+Time itself bows at your pace,
+You’re the soul of every face.
+Bridge
+O rider of the endless dawn,
+With seven steeds you carry on,
+Hope reborn with every ray,
+Burn the shadows far away.
+Final Chorus
+O Surya, flame of might,
+Armor bright in every fight,
+Ride the skies in endless flight,
+Surya Deva, source of light.
+## Audio- https://jmp.sh/s/skD8rR7qMQWeEyzQSnbd
+## Audio2- https://jmp.sh/s/FIbalBhTKAJPHKjOpdKN
+## Conclusion 
+This experiment has demonstrated the significant 
+potential and challenges of leveraging prompt engineering for AIdriven audio generation. By exploring various prompt types—such 
+as zero-shot, few-shot, descriptive, and directive prompts—
+participants gained insight into how subtle changes in prompt 
+wording can drastically influence the quality, style, and relevance of 
+the generated audio outputs. Comparing multiple advanced models 
+like AudioLM, Bark, and MusicGen illuminated each system’s 
+unique strengths and limitations, highlighting the importance of 
+selecting the right tool for specific audio tasks
